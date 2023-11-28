@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+    <script src="./js/imagepaths.js"></script>
+
+
+    <script src="./models/drawable-object.class.js"></script>
+    <script src="./models/bars/status-bar.class.js"></script>
+    <script src="./models/bars/tabasco-bar.class.js"></script>
+    <script src="./models/bars/money-bar.class.js"></script>
+    <script src="./models/bars/boss-bar.class.js"></script>
+    <script src="./models/movable-object.class.js"></script>
+    <script src="./models/characters/character.class.js"></script>
+    <script src="./models/characters/chicken.class.js"></script>
+    <script src="./models/characters/fast-chicken.class.js"></script>
+    <script src="./models/characters/boss.class.js"></script>
+    <script src="./models/cloud.class.js"></script>
+    <script src="./models/backgroundobjects.class.js"></script>
+    <script src="./models/barriers.class.js"></script>
+    <script src="./models/platforms.class.js"></script>
+    <script src="./models/keyboard.class.js"></script>
+    <script src="./models/throwable-object.class.js"></script>
+    <script src="./models/lootable-object.class.js"></script>
+    <script src="./models/coins.class.js"></script>
+    <script src="./models/level.class.js"></script>
+    <script src="./levels/level1.js"></script>
+    <script src="./models/world.class.js"></script>
+    <script src="./js/game.js"></script>
+
+</head>
+
+<body onload="init()">
+    <div>
+        <h1>el pollo Loco</h1>
+        <canvas id="canvas" height="600px" width="800px"></canvas>
+        <button id="start" class="btn restart" onclick="start()">Start</button>
+        <button id="restart" class="btn restart d-none" onclick="restart()">Restart</button>
+
+
+        <div class="width100 d-flex justify-content-around ">
+            <div class="menu">
+                <div><img class="reverse" src="img/img/sonstiges/arrow-right.png" alt="">
+                    <img src="img/img/sonstiges/arrow-right.png" alt=""></div>
+                
+                Walk
+            </div>
+    
+            <div class="menu"><img src="img/img/sonstiges/arrow-up.png" alt="">
+                jump</div>
+    
+            <div class="menu"><img src="img/img/sonstiges/space.png" alt="">
+                throw tabasco</div>
+    
+    
+            <img id="fullscreen" onclick="fullscreen()" class="" src="img/img/sonstiges/fullscreen.png" alt="">
+        </div>
+    </div>
+
+   
+
+
+
+</body>
+
+</html>
